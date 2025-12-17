@@ -80,157 +80,192 @@ const Gallery1 = () => {
         {
             img:p1,
             name:"Deluxe Pizza",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:c1,
             name:"Manchurian",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:b1,
             name:"Cookies",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:s5,
             name:"Veg Panner Salad",
+            des:"Good food satisfies hunger completely.It leaves a pleasant feeling."
         },
         {
             img:d3,
             name:"Lemonade",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:c5,
             name:"Manchow Soup",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
     const pizza =[
         {
             img:p1,
             name:"Deluxe Pizza",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:p2,
             name:"Tomato Pizza",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:p3,
             name:"Veggie Pizza",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:p5,
             name:"Supreme Pizza",
-            price:"350/-"
+            des:"Good food satisfies hunger completely.It leaves a pleasant feeling."
         },
         {
             img:p4,
             name:"Margherita Pizza",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:p6,
             name:"Pepperoni Pizza",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
     const Chinese =[
         {
             img:c1,
             name:"Manchurian",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:c2,
             name:"Hakka Noodles",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:c3,
             name:"Manchow Soup",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:c4,
             name:"Spring Rolls",
+            des:"Good food satisfies hunger completely.It leaves a pleasant feeling."
         },
         {
             img:c5,
             name:"Tomato Soup",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:c6,
             name:"Cheese Balls",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
     const Bakery =[
         {
             img:b1,
             name:"Cookies",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:b2,
             name:"Cake",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:b3,
             name:"Macarons",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:b4,
             name:"Bundt Cake",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:b5,
             name:"Panna Cotta",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:b6,
             name:"Choco Truffle Pastry",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
     const Salad =[
         {
             img:s1,
             name:"Greek Salad",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:s2,
             name:"Veg Salad",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:s3,
             name:"Fruit Salad",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:s4,
             name:"Sprouts Salad",
+            des:"Good food satisfies hunger completely.It leaves a pleasant feeling."
         },
         {
             img:s5,
             name:"Veg Paneer Salad",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:s6,
             name:"Green Salad",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
     const Drinks =[
         {
             img:d1,
             name:"DragonFruit Mocktail",
+            des:"Delicious food is rich in flavor and aroma.It makes every meal enjoyable."
         },
         {
             img:d2,
             name:"Classic Cocktail",
+            des:"Tasty food looks appealing and smells great.It excites the senses."
         },
         {
             img:d3,
             name:"Lemonade",
+            des:"Fresh ingredients improve the taste.They make food healthier and better."
         },
         {
             img:d4,
             name:"Mint Lemonade",
+            des:"Good food satisfies hunger completely.It leaves a pleasant feeling."
         },
         {
             img:d5,
             name:"Watermelon Cooler",
+            des:"Delicious meals bring comfort and happiness.They create good memories."
         },
         {
             img:d6,
             name:"Aam Panna",
+            des:"Well-cooked food pleases the taste buds.Every bite feels special."
         }
     ]
 
@@ -296,7 +331,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+          {item.des}
         </Typography>
       </CardContent>
     </Card>
@@ -322,7 +357,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+        {item.des}
         </Typography> 
       </CardContent>
     </Card>
@@ -348,7 +383,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+      {item.des}
         </Typography>
       </CardContent>
     </Card>
@@ -374,7 +409,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+       {item.des}
         </Typography>
       </CardContent>
     </Card>
@@ -400,7 +435,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+        {item.des}
         </Typography>
       </CardContent>
     </Card>
@@ -426,7 +461,7 @@ const theme = useTheme();
           {item.name}
         </Typography>
         <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tellus turpis
+      {item.des}
         </Typography>
       </CardContent>
     </Card>
