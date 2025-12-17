@@ -14,102 +14,91 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 
-const pages = [
-  "Home ",
-  "About",
-  "Gallary",
-  "Contact",
-  "My Orders",
-];
+const pages = ["Home", "About", "Gallary", "Contact", "My Orders"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#FEF5EE" }}>
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Link to={"/Home"}>
-            <img
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "#FEF5EE",
+        overflowX: "hidden", // 🔥 prevents horizontal scroll
+      }}
+    >
+      <Container maxWidth="xl" disableGutters>
+        <Toolbar
+          sx={{
+            px: { xs: 1, md: 3 },
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "nowrap",
+          }}
+        >
+          {/* Logo */}
+          <Link to="/Home">
+            <Box
+              component="img"
               src={logo}
-              style={{ marginLeft: "30px", height: 50, width: 130 }}
-            ></img>
+              alt="logo"
+              sx={{
+                height: 45,
+                width: { xs: 100, md: 130 },
+                maxWidth: "100%",
+                ml:3
+              }}
+            />
           </Link>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="black"
-            >
+          {/* Mobile Menu */}
+          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+            <IconButton onClick={(e) => setAnchorElNav(e.currentTarget)}>
               <MenuIcon />
             </IconButton>
             <Menu
-              id="menu-appbar"
               anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
               open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              onClose={() => setAnchorElNav(null)}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                <MenuItem
+                  key={page}
+                  onClick={() => setAnchorElNav(null)}
+                >
+                  <Link
+                    to={`/${page}`}
+                    style={{
+                      textDecoration: "none",
+                      color: "#666",
+                      width: "100%",
+                    }}
+                  >
+                    {page}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
 
+          {/* Desktop Menu */}
           <Box
             sx={{
-              flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              justifyContent: "space-evenly",
+              gap: 7,
+              flexGrow: 1,
+              justifyContent: "center",
+              minWidth: 0,
             }}
           >
             {pages.map((page) => (
-              <Link
-                key={page}
-                to={`/${page}`}
-                style={{ textDecoration: "none" }}
-              >
+              <Link key={page} to={`/${page}`} style={{ textDecoration: "none" }}>
                 <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
                   sx={{
-                    my: 2,
-                    color: "#666666",
-                    display: "block",
-                    fontSize: "16px",
+                    color: "#666",
+                    fontSize: 16,
+                    whiteSpace: "nowrap",
                     "&:hover": { color: "#CE3D3C" },
-                    transition: ".2s",
                   }}
                 >
                   {page}
@@ -117,25 +106,41 @@ const Navbar = () => {
               </Link>
             ))}
           </Box>
-          <LogoutIcon
-            sx={{ color: "gray", mr: 8 }}
-            style={{ cursor: "pointer" }}
-          />
-          <ShoppingCartIcon sx={{ color: "gray", mr: 8 }} />
-          <Link to={'/Reservation'}>
-            <Button
-          variant="contained"
-          sx={{
-            backgroundColor: "#CE3D3C",
-            color: "white",
-            height: 40,
-            width: 150,
-            mr:4
-          }}
-        >
-         Reservation
-        </Button>
-          </Link>
+
+          {/* Right Side */}
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: 1,
+              flexShrink: 0,
+            }}
+          >
+            <LogoutIcon
+              sx={{
+                color: "gray",
+                display: { xs: "none", sm: "block" },
+                mr:2
+              }}
+            />
+            <ShoppingCartIcon sx={{ color: "gray",mr:2 }} />
+
+            <Link to="/Reservation">
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#CE3D3C",
+                  height: 38,
+                  width: { xs: 110, md: 150 },
+                  fontSize: { xs: 12, md: 14 },
+                  whiteSpace: "nowrap",
+                  mr:2.5
+                }}
+              >
+                Reservation
+              </Button>
+            </Link>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
