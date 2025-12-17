@@ -22,7 +22,7 @@ import Gallary from "./Pages/Gallary";
 function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
       <Routes>
         <Route element={<PrivateRoute/>}>
           <Route path="/Home" element={<Home/>}/>
@@ -40,52 +40,23 @@ function App() {
         <Route path="/reg" element={<Registration/>}/>
         <Route path="/log" element={<Login/>}/>
       </Routes>
-      <Footer/>
+      <Footer/> */}
 
 
 
-
-
-
-
-
-
-
-      {/* <Home1/>
-      <About1/>
-      <About2/> 
-      <Gallery1/>
+      {/* <Home1/> */}
+      {/* <About1/> */}
+      {/* <About2/>  */}
+      {/* <Gallery1/> */}
       <Available/>
-      <Team/>
-      <Teamd1/>
-      <Teamd2/>
-      <Teamd3/>
-      <Book/>
-      <Contact/> */}
+      {/* <Team/> */}
+      {/* <Teamd1/> */}
+      {/* <Teamd2/> */}
+      {/* <Teamd3/> */}
+      {/* <Book/> */}
+      {/* <Contact/> */}
       {/* <Registration/>
       <Login/> */}
-
-
-
-
-
-
-
-
-
-
-         {/* <Routes> */}
-          {/* Regular User Routes */}
-          {/* <Route element={<PrivateRoute/>}> */}
-            {/* <Route path="/Home1" element={<Home1/>} />
-            <Route path="/About" element={<About1/>} /> */}
-          {/* </Route> */}
-  
-          
-          {/* Public Routes */}
-          {/* <Route path="/res" element={<Registration/>} />
-          <Route path="/log" element={<Login />} /> */}
-        {/* </Routes> */}
     </>
   );
 }
