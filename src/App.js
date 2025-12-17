@@ -22,7 +22,7 @@ import Gallary from "./Pages/Gallary";
 function App() {
   return (
     <>
-      {/* <Navbar/>
+      <Navbar/>
       <Routes>
         <Route element={<PrivateRoute/>}>
           <Route path="/Home" element={<Home/>}/>
@@ -40,7 +40,7 @@ function App() {
         <Route path="/reg" element={<Registration/>}/>
         <Route path="/log" element={<Login/>}/>
       </Routes>
-      <Footer/> */}
+      <Footer/>
 
 
 
@@ -48,7 +48,7 @@ function App() {
       {/* <About1/> */}
       {/* <About2/>  */}
       {/* <Gallery1/> */}
-      <Available/>
+      {/* <Available/> */}
       {/* <Team/> */}
       {/* <Teamd1/> */}
       {/* <Teamd2/> */}
