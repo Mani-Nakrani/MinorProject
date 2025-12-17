@@ -11,9 +11,9 @@ const Home = () => {
     <Box>
       <Home1/>
       <About1/>
-      {/* <Gallery1/>
+      <Gallery1/>
       <Available/>
-      <Team/> */}
+      <Team/>
     </Box>
   )
 }

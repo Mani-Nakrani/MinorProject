@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route element={<PrivateRoute/>}>
           <Route path="/Home" element={<Home/>}/>
-          {/* <Route path="/About" element={<About/>}/>
+          <Route path="/About" element={<About/>}/>
           <Route path="/about2" element={<About2/>}/>
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Gallary" element={<Gallary/>}/>
@@ -34,7 +34,7 @@ function App() {
           <Route path="/teamd1" element={<Teamd1/>}/>
           <Route path="/teamd2" element={<Teamd2/>}/>
           <Route path="/teamd3" element={<Teamd3/>}/>
-          <Route path="/Reservation" element={<Book/>}/> */}
+          <Route path="/Reservation" element={<Book/>}/>
         </Route>
 
         <Route path="/reg" element={<Registration/>}/>
