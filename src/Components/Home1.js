@@ -78,11 +78,10 @@ const Home1 = () => {
                     fontSize: { xs: 14, md: 16 },
                   }}
                 >
-                  Lorem ipsum dolor sit amet, conscetur adipiscing elit, sed do
-                  eimod tempor incididunt ut labore et dolore magna aliqua Quis
+                 Where great food meets a warm atmosphere. We serve delicious, freshly prepared dishes made with quality ingredients and authentic flavors.
                 </Typography>
 
-                <Link to="/gallery">
+                <Link to="/gallary">
                   <Button
                     variant="contained"
                     sx={{

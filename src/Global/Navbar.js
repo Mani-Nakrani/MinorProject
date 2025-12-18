@@ -46,7 +46,7 @@ const Navbar = () => {
                 height: 45,
                 width: { xs: 100, md: 130 },
                 maxWidth: "100%",
-                ml:3
+                ml:7
               }}
             />
           </Link>
@@ -120,10 +120,10 @@ const Navbar = () => {
               sx={{
                 color: "gray",
                 display: { xs: "none", sm: "block" },
-                mr:2
+                mr:4
               }}
             />
-            <ShoppingCartIcon sx={{ color: "gray",mr:2 }} />
+            <ShoppingCartIcon sx={{ color: "gray",mr:4}} />
 
             <Link to="/Reservation">
               <Button
@@ -134,7 +134,7 @@ const Navbar = () => {
                   width: { xs: 110, md: 150 },
                   fontSize: { xs: 12, md: 14 },
                   whiteSpace: "nowrap",
-                  mr:2.5
+                  mr:6
                 }}
               >
                 Reservation
