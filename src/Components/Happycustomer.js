@@ -2,6 +2,7 @@ import { Box, Container, Typography } from '@mui/material'
 import React, { useRef, useState } from 'react';
 import happycustomer1 from '../Assets/images/happycustomer1.png'
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 const Happycustomer = () => {
   return (
@@ -66,7 +67,9 @@ const Happycustomer = () => {
       <Typography sx={{ mt: 3, fontWeight: 600 ,fontSize:17}}>
         Jason Samoa <span style={{ color: "#777",fontSize:12 }}>- Regular Customer</span>
       </Typography>
-       <Button variant="contained" sx={{mt:2.4,bgcolor:"#CC3333"}}>Give Review</Button>
+      <Link to="/contactme">
+         <Button variant="contained" sx={{mt:2.4,bgcolor:"#CC3333"}}>Give Review</Button>
+      </Link>
     </Box>
 
 
