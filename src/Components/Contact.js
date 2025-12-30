@@ -10,6 +10,7 @@ import MapIcon from "@mui/icons-material/Map";
 import MoreTimeIcon from "@mui/icons-material/MoreTime";
 import { Link as RouterLink } from "react-router-dom";
 import Button from "@mui/material/Button";
+import ContactMe from "./ContactMe";
 
 function handleClick(event) {
   event.preventDefault();
@@ -294,7 +295,7 @@ const Contact = () => {
           </Box>
         </Box>
 
-        <br /><br />
+        <ContactMe/>
       </Container>
     </Box>
   );

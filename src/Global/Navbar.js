@@ -14,7 +14,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "About", "Gallary", "Contact", "My Orders"];
+const pages = ["Home", "About", "Gallary", "Contact", "Services","My Orders"];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

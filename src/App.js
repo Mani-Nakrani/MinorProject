@@ -18,6 +18,12 @@ import PrivateRoute from "./Components/PrivateRoute";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Gallary from "./Pages/Gallary";
+import Discover from "./Components/Discover";
+import Discovermain from "./Components/Discovermain";
+import DashBoard from "./Components/DashBoard";
+import Happycustomer from "./Components/Happycustomer";
+import Services from "./Pages/Services";
+import ContactMe from "./Components/ContactMe";
 
 function App() {
   return (
@@ -35,6 +41,12 @@ function App() {
           <Route path="/teamd2" element={<Teamd2/>}/>
           <Route path="/teamd3" element={<Teamd3/>}/>
           <Route path="/Reservation" element={<Book/>}/>
+          <Route path="/discover" element={<Discover/>}/>
+          <Route path="/discovermain" element={<Discovermain/>}/>
+          <Route path="/DashBoard" element={<DashBoard/>}/>
+          <Route path="/happycustomer" element={<Happycustomer/>}/>
+          <Route path="/Services" element={<Services/>}/>
+          <Route path="/contactme" element={<ContactMe/>}/>
         </Route>
 
         <Route path="/reg" element={<Registration/>}/>
@@ -42,21 +54,12 @@ function App() {
       </Routes>
       <Footer/>
 
-
-
-      {/* <Home1/> */}
-      {/* <About1/> */}
-      {/* <About2/>  */}
-      {/* <Gallery1/> */}
-      {/* <Available/> */}
-      {/* <Team/> */}
-      {/* <Teamd1/> */}
-      {/* <Teamd2/> */}
-      {/* <Teamd3/> */}
-      {/* <Book/> */}
-      {/* <Contact/> */}
-      {/* <Registration/>
-      <Login/> */}
+      {/* <Discover/> */}
+      {/* <Discovermain/> */}
+      {/* <DashBoard/> */}
+      {/* <Happycustomer/> */}
+      {/* <Service/> */}
+    
     </>
   );
 }
