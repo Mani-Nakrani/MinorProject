@@ -24,11 +24,12 @@ import DashBoard from "./Components/DashBoard";
 import Happycustomer from "./Components/Happycustomer";
 import Services from "./Pages/Services";
 import ContactMe from "./Components/ContactMe";
+import AddProduct from "./Components/AddProduct";
 
 function App() {
   return (
     <>
-      <Navbar/>
+       <Navbar/>
       <Routes>
         <Route element={<PrivateRoute/>}>
           <Route path="/Home" element={<Home/>}/>
@@ -47,18 +48,20 @@ function App() {
           <Route path="/happycustomer" element={<Happycustomer/>}/>
           <Route path="/Services" element={<Services/>}/>
           <Route path="/contactme" element={<ContactMe/>}/>
+          <Route path="/AddProduct" element={<AddProduct/>}/>
         </Route>
 
         <Route path="/reg" element={<Registration/>}/>
         <Route path="/log" element={<Login/>}/>
       </Routes>
-      <Footer/>
+      <Footer/> 
 
       {/* <Discover/> */}
       {/* <Discovermain/> */}
       {/* <DashBoard/> */}
       {/* <Happycustomer/> */}
       {/* <Service/> */}
+      {/*<AddProduct/>*/}
     
     </>
   );
